@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_add_24"
+        app:maxImageSize="40dp"
+        app:tint="@color/orange" />
+
+    <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/secondlogo" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            android:layout_below="@+id/upload"
+            android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

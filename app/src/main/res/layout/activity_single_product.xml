@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleProductActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/singleImageArray"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/sale"/>
+
+        <TextView
+            android:id="@+id/singleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="₱"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/singlePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="199.99"
+                android:textSize="30sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Stock : "
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/singleStock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="21sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/singleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Description"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Uploader"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="uploader"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="Trade Now"
+            android:fontFamily="@font/fredoka_one"
+            android:backgroundTint="#FF5722"/>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

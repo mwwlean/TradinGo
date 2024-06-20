@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic</item>
+        <item>@font/anton</item>
+        <item>@font/archivo</item>
+        <item>@font/bangers</item>
+        <item>@font/dela_gothic_one</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/racing_sans_one</item>
+    </array>
+</resources>

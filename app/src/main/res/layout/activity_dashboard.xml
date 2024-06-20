@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="50px"
+        app:srcCompat="@drawable/secondlogo"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="383dp"
+        android:layout_height="276dp"
+        app:srcCompat="@drawable/tradingo_logo" />
+
+    <TextView
+        android:paddingLeft="12dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic"
+        android:text="TradinGo"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:paddingLeft="12dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/antic"
+        android:text="Ormoc city's Hub"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/explore"
+        android:layout_width="203dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Explore now"
+        android:textSize="13sp"
+        app:cornerRadius="50dp" />
+
+    <TextView
+        android:textSize="19dp"
+        android:id="@+id/Aproduct"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Products"
+        android:fontFamily="@font/archivo"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_below="@+id/Aproduct"
+        android:layout_margin="5dp"
+        android:backgroundTint="#00FF5722"
+        android:outlineAmbientShadowColor="#FB6B09"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardCornerRadius="2dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_corner_radius="20"
+            app:iss_delay="1000"
+            app:iss_period="1000" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

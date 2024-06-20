@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/archivo"
+        android:text="Profile Information"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="292dp">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="200dp"
+            android:layout_height="205dp"
+            android:layout_margin="100dp"
+            android:src="@drawable/person"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.325" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name: tradingo"
+            android:id="@+id/first"
+            android:textSize="23dp"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/archivo"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name: mobile"
+            android:id="@+id/last"
+            android:textSize="23dp"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/archivo"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="200dp"
+        android:id="@+id/signOut"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="test log out"
+        tools:ignore="MissingConstraints"
+        app:cornerRadius="50dp"/>
+
+</LinearLayout>
